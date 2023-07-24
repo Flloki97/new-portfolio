@@ -202,3 +202,12 @@ p strong {
 .cv-container .job-tag:hover {
     background-color: #0ce4867f;
 }
+
+
+
+svg {
+    width: 50%;
+    height: 300px;
+    transform: rotate(180deg);
+    margin: 20px 0 0 0;
+}
