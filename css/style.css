@@ -31,7 +31,6 @@ body {
 .container {
     border: 5px solid #0ce486;
     max-width: 1400px;
-    height: 100vh;
     width: 100%;
     padding: 0 45px;
 }
@@ -206,9 +205,16 @@ p strong {
 
 
 svg {
-    /* width: 70%;
-    height: 300px; */
-    /* transform: rotate(180deg); */
     width: 50%;
     margin: 20px 0 0 0;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-title .h1-tag {
+    display: flex;
+    align-items: center;
 }
