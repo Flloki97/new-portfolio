@@ -206,8 +206,9 @@ p strong {
 
 
 svg {
+    /* width: 70%;
+    height: 300px; */
+    /* transform: rotate(180deg); */
     width: 50%;
-    height: 300px;
-    transform: rotate(180deg);
     margin: 20px 0 0 0;
 }
