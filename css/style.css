@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Keanu-B;
+    src: url(../font/KeanuBold.ttf);
+}
+
+@font-face {
+    font-family: Keanu-R;
+    src: url(../font/KeanuRegular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
