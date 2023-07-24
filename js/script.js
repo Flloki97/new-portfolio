@@ -16,3 +16,5 @@ function createLineTween(svg) {
  function drawLine(obj, svg) {
   svg.style.strokeDasharray = [obj.length, obj.pathLength].join(' ');
  };
+
+ //  -- Design link: https://dribbble.com/shots/16383090-Personal-Portfolio-Website-concept-design/attachments/9661424?mode=media
