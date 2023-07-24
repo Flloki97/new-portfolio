@@ -12,5 +12,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: Keanu-R;
 }
 
+a {
+    color: #fff;
+}
+
+body {
+    background-color: #111119;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    border: 5px solid #0ce486;
+    max-width: 1400px;
+    height: 100vh;
+    width: 100%;
+    padding: 0 45px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 60%;
+}
+
+.left-links a,
+.right-links a {
+    padding: 5px 15px;
+    border: 2px solid #ff000000;
+    transition: all 0.2s;
+}
+
+.left-links a:hover,
+.right-links a:hover {
+    color: #0ce486;
+    border: 2px solid #0ce486
+}
+
+.logo-container {
+    width: 100px;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+p {
+    color: #fff;
+}
+
+p strong {
+    color: #0ce486;
+}
