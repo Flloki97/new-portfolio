@@ -49,13 +49,13 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    height: 60%;
+    height: 80%;
     min-width: 200px;
 }
 
 .left-links a,
 .right-links a {
-    padding: 5px 0;
+    padding: 8px 0;
     border: 2px solid #ff000000;
     transition: padding 0.5s;
 }
@@ -64,7 +64,7 @@ body {
 .right-links a:hover {
     color: #0ce486;
     border: 2px solid #0ce486;
-    padding: 5px 10px 5px 30px;
+    padding: 8px 10px 8px 30px;
     background-color: #0ce4862e;
 }
 
@@ -76,10 +76,119 @@ body {
     width: 100%;
 }
 
+/*  Content    */
+
+.home-container {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hc-left,
+.hc-right {
+    width: 50%;
+}
+
+.hc-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 p {
-    color: #fff;
+    color: #4b4b54;
+    font-size: 22px;
 }
 
 p strong {
     color: #0ce486;
+}
+
+.h1-tag {
+    padding-left: 40px;
+}
+
+.h1-tag strong {
+    font-size: 70px;
+    line-height: 1.1em;
+    color: #fff;
+}
+
+.job-tag {
+    margin-top: 40px;
+}
+
+.cv-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 25px;
+    border-radius: 100%;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #111119;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #111119;
+    animation: rotate 3s alternate-reverse infinite;
+}
+
+.cv-container {
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+.cv-container::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 50px;
+    border-radius: 100%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #111119;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #111119;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cv-container img {
+    width: 340px;
+    opacity: 0.3;
+    transform: rotate(-35deg);
+}
+
+.cv-container .job-tag {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-radius: 100%;
+}
+
+.cv-container .job-tag:hover {
+    background-color: #0ce4867f;
 }
