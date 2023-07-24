@@ -209,12 +209,14 @@ svg {
     margin: 20px 0 0 0;
 }
 
-.portfolio-title {
+.portfolio-title,
+.skills-title {
     display: flex;
     justify-content: center;
 }
 
-.portfolio-title .h1-tag {
+.portfolio-title .h1-tag,
+.skills-title .h1-tag {
     display: flex;
     align-items: center;
 }
