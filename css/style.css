@@ -50,19 +50,22 @@ body {
     align-items: flex-start;
     flex-direction: column;
     height: 60%;
+    min-width: 200px;
 }
 
 .left-links a,
 .right-links a {
-    padding: 5px 15px;
+    padding: 5px 0;
     border: 2px solid #ff000000;
-    transition: all 0.2s;
+    transition: padding 0.5s;
 }
 
 .left-links a:hover,
 .right-links a:hover {
     color: #0ce486;
-    border: 2px solid #0ce486
+    border: 2px solid #0ce486;
+    padding: 5px 10px 5px 30px;
+    background-color: #0ce4862e;
 }
 
 .logo-container {
