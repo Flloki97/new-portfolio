@@ -18,3 +18,17 @@ function createLineTween(svg) {
  };
 
  //  -- Design link: https://dribbble.com/shots/16383090-Personal-Portfolio-Website-concept-design/attachments/9661424?mode=media
+
+
+
+//  Carousel JS
+
+const buttons = document.querySelector("[data-carousel-button]");
+
+buttons.ariaReadOnly.array.forEach(element => {
+   buttons.addEventListener("click", () => {
+      
+   })
+});
+
+
