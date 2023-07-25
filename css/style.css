@@ -204,6 +204,7 @@ p strong {
     z-index: 99;
     border-radius: 100%;
     background: #202823ad;
+    transition: all 0.5s;
 }
 
 .cv-container .job-tag:hover {
