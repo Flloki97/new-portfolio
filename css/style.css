@@ -382,7 +382,7 @@ svg {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 45px;
+    padding: 15px 45px;
     font-size: 22px;
     font-weight: bold;
     border-bottom: 2px solid #0ce486;
@@ -413,13 +413,15 @@ body {
   font-size: 18px;
 }
 
-.range {
+.range,
+.range2,
+.range3,
+.range4 {
   position: relative;
   background-color: #333;
   width: 300px;
   height: 30px;
   transform: skew(30deg);
-  font-family: 'Orbitron', monospace;
   
   &:before {
     --width: calc(var(--p) * 1%);
@@ -432,7 +434,7 @@ body {
     height: 100%;
     background-color: #0ce486;
     z-index: 0;
-    animation: load .5s forwards linear, glitch 2s infinite linear;
+    
   }
   
   &:after {
@@ -450,6 +452,32 @@ body {
     transform: skew(-30deg) translateY(-100%);
     line-height: 1.5;
   }
+}
+
+.range {
+    &:before {
+        animation: load .5s forwards linear, glitch 2s infinite linear;
+    }
+}
+.range2 {
+    &:before {
+        animation: load .5s forwards linear, glitch 2s infinite ;
+        animation-delay: 0ms, 1000ms;
+    }
+}
+
+.range3 {
+    &:before {
+        animation: load .5s forwards linear, glitch 2s infinite linear;
+        animation-delay: 0ms, 2500ms;
+    }
+}
+
+.range4 {
+    &:before {
+        animation: load .5s forwards linear, glitch 2s infinite linear;
+        animation-delay: 0ms, 800ms;
+    }
 }
 
 @keyframes load {
