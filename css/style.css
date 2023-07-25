@@ -224,6 +224,10 @@ svg {
     align-items: center;
 }
 
+.skills-title {
+    margin-bottom: 60px;
+}
+
 .portfolio-title {
     margin-bottom: 100px;
 }
@@ -259,12 +263,10 @@ svg {
     width: 400px;
     height: 400px;
     border-radius: 100%;
-    /* border: 2px solid #666666; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 0 0 8px #111119, 0 0 0 10px #ffffff42; */
 }
 
 .portfolio-project-container::after {
@@ -370,7 +372,108 @@ svg {
     transition-delay: 0;
 }
 
+.skills-wrapper {
+    margin: 0 -45px;
+}
+
+.skill {
+    min-height: 70px;
+    background: #111119;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 45px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #0ce486;
+    color: #4b4b54;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills strong {
+    color: #fff;
+    font-size: 35px;
+}
 
 
+/*     TEST Progress Bar         */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*, *:before, *:after {box-sizing:border-box;}
+body {
+  /* background-color: #212121; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ccc;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.range {
+  position: relative;
+  background-color: #333;
+  width: 300px;
+  height: 30px;
+  transform: skew(30deg);
+  font-family: 'Orbitron', monospace;
+  
+  &:before {
+    --width: calc(var(--p) * 1%);
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0ce486;
+    z-index: 0;
+    animation: load .5s forwards linear, glitch 2s infinite linear;
+  }
+  
+  &:after {
+    counter-reset: progress var(--p);
+    content: counter(progress) '%';
+    color: #111119;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewX(-30deg);
+    z-index: 1;
+  }
+  
+  &__label {
+    transform: skew(-30deg) translateY(-100%);
+    line-height: 1.5;
+  }
+}
+
+@keyframes load {
+  to {
+    width: var(--width);
+  }
+}
+
+@keyframes glitch {
+  0%, 5% {
+    transform: translate(0, 0);
+  }
+  1% {
+    transform: translate(-5%, -10%);
+  }
+  2% {
+    transform: translate(10%, 30%);
+  }
+  3%{
+    transform: translate(-43%, 10%);
+  }
+  4% {
+    transform: translate(2%, -23%);
+  }
+}
 
 
