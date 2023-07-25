@@ -209,9 +209,9 @@ svg {
     margin: 20px 0 0 0;
 }
 
-.portfolio-container {
+/* .portfolio-container {
     margin-top: -160px;
-}
+} */
 
 .portfolio-title,
 .skills-title {
@@ -508,6 +508,18 @@ body {
   4% {
     transform: translate(2%, -23%);
   }
+}
+
+/* End of my skills animation */
+
+
+.skills-container {
+    margin-bottom: 50px;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
 }
 
 
