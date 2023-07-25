@@ -283,3 +283,40 @@ svg {
     margin-top: 0px;
 }
 
+.carousel-arrows-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel-btn-prev,
+.carousel-btn-next {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 15px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.carousel-btn-prev img,
+.carousel-btn-next img {
+    width: 30px;
+}
+
+.carousel-btn-prev img {
+    padding-right: 5px;
+}
+
+.carousel-btn-next img {
+    padding-left: 5px;
+}
+
+.carousel-btn-prev:hover,
+.carousel-btn-next:hover {
+    transform: scale(1.3);
+}
+
+
+
