@@ -49,7 +49,8 @@ body {
     align-items: flex-start;
     flex-direction: column;
     height: 80%;
-    min-width: 200px;
+    width: 250px;
+    max-width: 350px;
 }
 
 .left-links a,
@@ -389,6 +390,11 @@ svg {
     color: #4b4b54;
     display: flex;
     justify-content: space-between;
+    transition: 1.3s;
+}
+
+.skill:hover {
+    background-color: #00d87a;
 }
 
 .skills strong {
@@ -401,7 +407,6 @@ svg {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-*, *:before, *:after {box-sizing:border-box;}
 body {
   /* background-color: #212121; */
   display: flex;
@@ -418,10 +423,11 @@ body {
 .range3,
 .range4 {
   position: relative;
-  background-color: #333;
+  /* background-color: #333; */
   width: 300px;
   height: 30px;
   transform: skew(30deg);
+  border: 2px solid #111119;
   
   &:before {
     --width: calc(var(--p) * 1%);
