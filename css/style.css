@@ -522,4 +522,57 @@ body {
     justify-content: center;
 }
 
+.social-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border: 2px solid #0ce486;
+    border-radius: 100%;
+    font-size: 25px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.socials strong {
+    font-size: 25px;
+}
+
+.instagram {
+    transform: scale(1.2);
+    margin-top: -20px;
+}
+
+.twitter {
+    transform: scale(0.8);
+    margin-top: 180px;
+}
+
+.linkedin {
+    margin-top: -180px;
+}
+
+.gmail {
+    margin-top: 50px;
+}
+
+.socials:hover {
+    background-color: #0ce486;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
