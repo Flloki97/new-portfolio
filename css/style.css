@@ -336,14 +336,23 @@ svg {
     position: relative;
 }
 
+.carousel ul {
+    width: 100%;
+    min-height: 500px;
+}
+
 .slide {
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 
 .slide[data-active] {
     opacity: 1;
+    z-index: 2;
+    transition-delay: 0;
 }
 
 
