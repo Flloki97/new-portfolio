@@ -202,8 +202,6 @@ p strong {
     background-color: #0ce4867f;
 }
 
-
-
 svg {
     width: 50%;
     margin: 20px 0 0 0;
@@ -220,3 +218,57 @@ svg {
     display: flex;
     align-items: center;
 }
+
+.portfolio-content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.pc-left,
+.pc-right {
+    width: 50%;
+}
+
+.pc-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-project-container::before {
+    content: '';
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    border: 2px solid #0ce486;
+    padding: 25px;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-project-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 2px solid red;
+    background-image: url(../img/projekti-1.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-project-container::after {
+    content: '';
+    position: absolute;
+    border: 2px solid blue;
+    padding: 50px;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
