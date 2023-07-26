@@ -594,9 +594,13 @@ body {
     display: flex;
     align-items: flex-start;
     height: 80%;
-    padding-bottom: 70px;
     gap: 45px;
 }
+
+.experience-container .year-container:not(:last-child) {
+    padding-bottom: 70px;
+}
+
 .experience-container .year-container a {
     font-size: 12pt;
 	color: white;
@@ -676,4 +680,3 @@ body {
 .experience-description-txt p {
     padding-bottom: 0;
 }
-
