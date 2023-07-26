@@ -1,3 +1,17 @@
+// Smooth scrolling with Javascript because if i make it with css the smoth scroll from GSAP doesnt work well 
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+       e.preventDefault();
+
+       document.querySelector(this.getAttribute('href')).scrollIntoView({
+           behavior: 'smooth'
+       });
+   });
+});
+
+
+
 var svg1 = document.querySelector('#svg'+1);
 var tl = new TimelineMax();
 
@@ -44,7 +58,7 @@ buttons.forEach(button => {
 
 
 
-
+// Smooth Scroll with GSAP
 
 const lenis = new Lenis({
    duration: 1.2,
@@ -63,21 +77,10 @@ const section_1 = document.getElementById("container");
 const col_left = document.querySelector(".col_left");
 const timeln = gsap.timeline({paused: true});
 
-// timeln.fromTo(col_left, {y: 0}, {y: '190vh', duration: 1, ease: 'none'}, 0);
-
-// const scroll_1 = ScrollTrigger.create({
-//    animation: timeln,
-//    trigger: section_1,
-//    start: 'top top',
-//    end: 'bottom center',
-//    scrub: true
-// });
-
 
 
 function handleScroll() {
    const element = document.querySelector('#menu-container');
- 
    const scrollThreshold = 5;
  
    if (window.scrollY > scrollThreshold) {
@@ -91,3 +94,4 @@ function handleScroll() {
  
  window.addEventListener('scroll', handleScroll);
 
+ 

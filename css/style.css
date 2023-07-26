@@ -16,6 +16,10 @@
     font-family: Keanu-R;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 a {
     color: #fff;
 }
