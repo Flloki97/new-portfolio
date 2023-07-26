@@ -666,6 +666,7 @@ body {
 
 .year-link-wrapper a {
     width: 100%;
+    cursor: pointer;
 }
 
 .experience-job-title p {
