@@ -216,10 +216,6 @@ svg {
     margin: 20px 0 0 0;
 }
 
-/* .portfolio-container {
-    margin-top: -160px;
-} */
-
 .portfolio-title,
 .skills-title {
     display: flex;
@@ -375,7 +371,6 @@ svg {
 }
 
 .slide::marker {
-    /* display: none; */
     color: #111119;
     visibility: hidden;
 }
@@ -421,7 +416,6 @@ svg {
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 body {
-  /* background-color: #212121; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,7 +430,6 @@ body {
 .range3,
 .range4 {
   position: relative;
-  /* background-color: #333; */
   width: 300px;
   height: 30px;
   transform: skew(30deg);
@@ -596,3 +589,91 @@ body {
 #skills{
     padding-top: 30px;
 }
+
+.experience-container .year-container {
+    display: flex;
+    align-items: flex-start;
+    height: 80%;
+    padding-bottom: 70px;
+    gap: 45px;
+}
+.experience-container .year-container a {
+    font-size: 12pt;
+	color: white;
+	background: transparent;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #0ce486;
+	position: relative;
+	letter-spacing: 1px;
+	outline: none;
+    transition: all 0.5s;
+}
+
+.experience-container .year-container a:hover {
+    transform: scale(1.1);
+}
+
+.experience-container .year-container a::before {
+    content: '';
+	width: 20px;
+	height: 20px;
+	background: #111119;
+	border: 3px solid #0ce486;
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: -12px;
+	left: -13px;
+}
+
+.experience-container .year-container a::after {
+    content: '';
+	width: 20px;
+	height: 20px;
+	background: #111119;
+	border: 3px solid #0ce486;
+	transform: rotate(-132deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: auto;
+	right: -13px;
+	bottom: -12px;
+}
+
+.experience-text-wrapper svg {
+    width: 100%;
+}
+
+.experience-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.year-link-wrapper {
+    min-width: 295px;
+}
+
+.year-link-wrapper a {
+    width: 100%;
+}
+
+.experience-job-title p {
+    padding-bottom: 15px;
+}
+
+.experience-description-txt {
+    border-left: 3px solid #0ce486;
+    padding: 5px 0 0 20px;
+}
+
+.experience-description-txt p {
+    padding-bottom: 0;
+}
+
