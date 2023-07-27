@@ -762,6 +762,19 @@ body {
     margin: 0 -20px;
 }
 
+.menu-links-container a {
+    padding: 8px 0;
+    border: 2px solid #ff000000;
+    transition: padding 0.5s;
+}
+
+.menu-links-container a:hover {
+    color: #0ce486;
+    border: 2px solid #0ce486;
+    padding: 8px 10px 8px 30px;
+    background-color: #0ce4862e;
+}
+
 .mobile-menu-container {
     position: sticky;
     top: 0;
@@ -1045,7 +1058,8 @@ body {
     }
 
     .carousel ul {
-        height: 620px;
+        /* height: 620px; */
+        height: 740px;
         min-height: 100%;
     }
 
@@ -1063,7 +1077,7 @@ body {
     }
 
     .h1-tag strong {
-
+        font-size: 25px;
     }
 
     .mobile-menu-container {
