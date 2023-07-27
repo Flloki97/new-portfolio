@@ -883,7 +883,7 @@ body {
 
     .home-container {
         flex-direction: column;
-        margin-top: 65px;
+        margin-top: 50px;
     }
 
     .hc-left, 
@@ -994,7 +994,7 @@ body {
     }
 
     .menu-links-container {
-        display: flex;
+        /* display: flex; */
     }
 
 }
