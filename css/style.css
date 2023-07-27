@@ -63,6 +63,10 @@ body {
     max-width: 350px;
 }
 
+.right-links {
+    align-items:flex-end;
+}
+
 .left-links a,
 .right-links a {
     padding: 8px 0;
@@ -127,6 +131,10 @@ p strong {
 
 .job-tag {
     margin-top: 40px;
+}
+
+.job-tag-small {
+    display: none;
 }
 
 .cv-container::before {
@@ -234,6 +242,7 @@ svg {
 
 .skills-title {
     margin-bottom: 60px;
+    padding-top: 30px;
 }
 
 .portfolio-title {
@@ -445,7 +454,7 @@ body {
   width: 300px;
   height: 30px;
   transform: skew(30deg);
-  border: 2px solid #111119;
+  border: 2px solid #222233;
   
   &:before {
     --width: calc(var(--p) * 1%);
@@ -545,6 +554,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .socials {
@@ -596,11 +606,11 @@ body {
 .scrolled-class {
     top: 0;
 }
-
+/* 
 #portfolio,
 #skills{
     padding-top: 30px;
-}
+} */
 
 .experience-container .year-container {
     display: flex;
@@ -649,7 +659,7 @@ body {
 .experience-container .year-container a::after {
     content: '';
 	width: 20px;
-	height: 20px;
+	height: 18px;
 	background: #111119;
 	border: 3px solid #0ce486;
 	transform: rotate(-132deg);
@@ -673,7 +683,7 @@ body {
 }
 
 .year-link-wrapper {
-    min-width: 295px;
+    min-width: 225px;
 }
 
 .year-link-wrapper a {
@@ -692,4 +702,159 @@ body {
 
 .experience-description-txt p {
     padding-bottom: 0;
+}
+
+
+/* Responsive Design  */
+
+@media (max-width: 950px) {
+    .h1-tag strong {
+        font-size: 50px;
+    }
+
+    .cv-container {
+        width: 200px;
+        height: 200px;
+        min-width: none;
+    }
+
+    .cv-container img {
+        width: 140%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .job-tag-big {
+        display: none;
+    }
+
+    .job-tag-small {
+        display: flex;
+    }
+
+    .portfolio-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pc-left, .pc-right {
+        width: 100%;
+    }
+
+    .carousel ul {
+        height: 60vh;
+        min-height: 60vh;
+    }
+
+    .portfolio-project-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .portfolio-project-container img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .skills strong {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .menu-container {
+        width: calc(100% - -40px);
+        padding: 0 20px;
+        margin: 0 -20px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        margin-top: 65px;
+    }
+
+    .hc-left, 
+    .hc-right {
+        width: 100%;
+    }
+
+    .hc-left {
+        margin-bottom: 100px;
+    }
+
+    .line-container svg {
+        width: 45%;
+    }
+
+    .divider {
+        margin-top: 20px;
+    }
+
+    .portfolio-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pc-left, .pc-right {
+        width: 100%;
+    }
+
+    .portfolio-content-wrapper .pc-right .h1-tag {
+        padding-left: 40px;
+    }
+
+    .year-link-wrapper {
+        min-width: 150px;
+        line-height: 1.2em;
+    }
+
+    .year-link-wrapper a {
+        text-align: center;
+    }
+
+    .skills-title {
+        margin-bottom: 30px;
+    }
+
+    .skills-wrapper {
+        margin: 0 -20px;
+    }
+    
+    .skill {
+        padding: 15px 20px;
+    }
+
+    .skills {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .skills-level {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .skills strong {
+        font-size: 22px;
+    }
+
+    .range, .range2, .range3, .range4 {
+        width: 200px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
 }
