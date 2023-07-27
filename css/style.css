@@ -409,6 +409,14 @@ svg {
     background-color: #00d87a;
 }
 
+/* .skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 390px;
+} */
+
 .skills strong {
     color: #fff;
     font-size: 35px;
