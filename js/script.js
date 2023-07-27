@@ -16,7 +16,7 @@ var svg1 = document.querySelector('#svg'+1);
 var tl = new TimelineMax();
 
 //create a timeline with 2 tweens that draw 2 separate strokes
-tl.add(createLineTween(svg1),  "+=2");
+tl.add(createLineTween(svg1),  "+=1");
 
 //this function creates a single tween that animates the stroke of an svg
 function createLineTween(svg) { 
