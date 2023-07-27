@@ -107,10 +107,11 @@ function handleScroll() {
    if(smallMenu.classList.contains('test')) {
       styleLineTop.webkitTransform ='rotate(45deg) translate(0px, 0px)';
       styleLineBottom.webkitTransform ='rotate(315deg) translate(7px, -7px)';
-      // dropMenu.style =
+      dropMenu.style.display = "flex";
    } else {
       styleLineTop.webkitTransform ='rotate(0deg) translate(0px, 0px)';
       styleLineBottom.webkitTransform ='rotate(0deg) translate(0px, 0px)';
+      dropMenu.style.display = "none";
    }
    
  }
