@@ -16,14 +16,6 @@
     font-family: Keanu-R;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
-
-a {
-    color: #fff;
-}
-
 body {
     background-color: #111119;
     display: flex;
@@ -31,6 +23,51 @@ body {
     align-items: center;
 }
 
+a {
+    color: #fff;
+}
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #111119;
+    top: 0;
+    left:0;
+    z-index: 9999; 
+    visibility:hidden;
+    opacity:0;
+    transition:all 0.5s ease;
+    
+}
+
+.preloader_inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 300;
+  color: #0ce486;
+}
+
+.container{
+    visibility:hidden;
+    opacity:0;
+    transition:all 0.5s ease;
+  }
+
+.show {
+  visibility:visible !important;
+  opacity:1 !important;
+  transition:all 0.5s ease;
+}
 
 .container {
     border: 5px solid #0ce486;
@@ -864,9 +901,14 @@ body {
         width: 100%;
     }
 
-    .carousel ul {
+    /* .carousel ul {
         height: 60vh;
         min-height: 60vh;
+    } */
+
+    .carousel ul {
+        height: 57vh;
+        min-height: 55vh;
     }
 
     .portfolio-project-container {
@@ -1007,8 +1049,8 @@ body {
         flex-direction: column;
     }
 
-    .menu-links-container {
-        /* display: flex; */
+    .logo-container img {
+        margin-left: -20px;
     }
 
 }
