@@ -30,7 +30,7 @@ a {
 .preloader {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     background: #111119;
     top: 0;
     left:0;
@@ -38,6 +38,7 @@ a {
     visibility:hidden;
     opacity:0;
     transition:all 0.5s ease;
+    overflow: hidden;
     
 }
 

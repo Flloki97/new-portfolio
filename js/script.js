@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+   loader();
+});
+
+
 // Smooth scrolling with Javascript because if i make it with css the smoth scroll from GSAP doesnt work well 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -112,10 +117,8 @@ function handleScroll() {
       styleLineTop.webkitTransform ='rotate(0deg) translate(0px, 0px)';
       styleLineBottom.webkitTransform ='rotate(0deg) translate(0px, 0px)';
       dropMenu.style.display = "none";
-   }
-   
+   } 
  }
- 
 
 
 //  Preloader Animation 
@@ -139,12 +142,8 @@ function loader(_success) {
                    return _success();
                }
            }
-       }, 20);
+       }, 50);
 }
 
 
-window.addEventListener("load", () => {
-   setTimeout(function() {
-      loader()
-   }, 1000);
- });
+
