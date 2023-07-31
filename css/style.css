@@ -74,7 +74,7 @@ a {
     border: 5px solid #0ce486;
     max-width: 1400px;
     width: 100%;
-    padding: 0 45px;
+    padding: 0 45px 20px 45px;
 }
 
 .menu-container {
@@ -461,14 +461,6 @@ svg {
     background-color: #00d87a;
 }
 
-/* .skills {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 390px;
-} */
-
 .skills strong {
     color: #fff;
     font-size: 35px;
@@ -649,11 +641,6 @@ body {
 .scrolled-class {
     top: 0;
 }
-/* 
-#portfolio,
-#skills{
-    padding-top: 30px;
-} */
 
 .experience-container .year-container {
     display: flex;
@@ -750,11 +737,6 @@ body {
 
 
 /* Mobile Menu */
-
-/* .mobile-menu-container {
-    display: none;
-} */
-
 .mobile-menu-container {
     display: none;
     justify-content: space-between;
@@ -864,10 +846,6 @@ body {
   }
 
 
- 
-
-
-
 
 /* Responsive Design  */
 
@@ -887,7 +865,7 @@ body {
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .job-tag-big {
@@ -907,11 +885,6 @@ body {
     .pc-left, .pc-right {
         width: 100%;
     }
-
-    /* .carousel ul {
-        height: 60vh;
-        min-height: 60vh;
-    } */
 
     .carousel ul {
         height: 57vh;
@@ -935,7 +908,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 20px;
+        padding: 0 20px 20px 20px;
     }
 
     .menu-container {
@@ -1064,18 +1037,15 @@ body {
         margin-left: -20px;
     }
 
-    /* .footer {
-
-    } */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
 @media (max-width: 540px) {
-    /* .skills-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-
     .skill {
         flex-direction: column;
         justify-content: space-between;
@@ -1115,7 +1085,6 @@ body {
     }
 
     .carousel ul {
-        /* height: 620px; */
         height: 700px;
         min-height: 100%;
     }
@@ -1167,9 +1136,6 @@ body {
     }
 
 }
-
-
-
 
 
  
