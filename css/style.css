@@ -933,7 +933,7 @@ body {
 
     .line-container svg {
         /* width: 45%; */
-        width: 80%;
+        width: 50%;
     }
 
     .divider {
@@ -1293,7 +1293,10 @@ body {
 }
 
 .home-container {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
+.line-container svg {
+    width: 50%;
+}
  
