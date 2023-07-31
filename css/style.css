@@ -779,7 +779,7 @@ body {
   }
 
 .ham-menu:hover {
-    animation: glitchMenu 1s linear infinite;
+    animation: glitchMenu 1s linear both;
     animation-delay: 500ms;
 }
 
@@ -859,6 +859,8 @@ body {
 
   }
 
+
+ 
 
 
 
@@ -1015,6 +1017,10 @@ body {
         width: 200px;
         font-size: 16px;
     }
+
+    .experience-container .year-container a:hover {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 600px) {
@@ -1101,7 +1107,7 @@ body {
     }
 
     .portfolio-title {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .carousel ul {
@@ -1127,14 +1133,33 @@ body {
         font-size: 25px;
     }
 
-    .mobile-menu-container {
-        width: calc(100% - -40px);
+    .mobile-menu-container,
+    .menu-links-container {
+        width: calc(100% - -39px);
         padding: 0 20px;
         margin: 0 -20px;
     }
 
+    .portfolio-project-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .portfolio-project-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .portfolio-project-container::before {
+        padding: 0px;
+    }
+
+    .portfolio-project-container::after {
+        padding: 15px;
+    }
 
 }
+
 
 
 

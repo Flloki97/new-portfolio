@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
 });
 
 
+
 // Smooth scrolling with Javascript because if i make it with css the smoth scroll from GSAP doesnt work well 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -99,17 +100,44 @@ function handleScroll() {
  
  window.addEventListener('scroll', handleScroll);
 
+
+var width = $(window).width();
+var smallMenu = document.getElementById("ham-menu");
+var styleLineTop = document.getElementById("top-line").style;
+var styleLineBottom = document.getElementById("bottom-line").style;
+var dropMenu = document.getElementById("menu-links-container");
+
+$(window).on('resize', function() {
+   if ($(this).width() !== width) {
+     width = $(this).width();
+      if(width >= 600 && smallMenu.classList.contains('opened')) {
+         styleLineTop.webkitTransform ='rotate(0deg) translate(0px, 0px)';
+         styleLineBottom.webkitTransform ='rotate(0deg) translate(0px, 0px)';
+         dropMenu.style.display = "none";
+         smallMenu.classList.remove('opened');
+      }
+   }
+
+ });
+ 
+
+ $(".menu-links-container a").on('click', () => {
+      styleLineTop.webkitTransform ='rotate(0deg) translate(0px, 0px)';
+      styleLineBottom.webkitTransform ='rotate(0deg) translate(0px, 0px)';
+      dropMenu.style.display = "none";
+      smallMenu.classList.remove('opened');
+ })
+
  function openMenu() {
-   var mobileMenu = document.getElementById("ham-menu").classList.toggle('test');
+   var mobileMenu = document.getElementById("ham-menu").classList.toggle('opened');
    var smallMenu = document.getElementById("ham-menu");
    var styleLineTop = document.getElementById("top-line").style;
    var styleLineBottom = document.getElementById("bottom-line").style;
    var dropMenu = document.getElementById("menu-links-container");
    
-
  
 
-   if(smallMenu.classList.contains('test')) {
+   if(smallMenu.classList.contains('opened')) {
       styleLineTop.webkitTransform ='rotate(45deg) translate(0px, 0px)';
       styleLineBottom.webkitTransform ='rotate(315deg) translate(7px, -7px)';
       dropMenu.style.display = "flex";
@@ -142,7 +170,7 @@ function loader(_success) {
                    return _success();
                }
            }
-       }, 25);
+       }, 5);
 }
 
 
