@@ -17,30 +17,70 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+// // JavaScript
+// var line = document.querySelector('#svg1');
+// var svgContainer = document.querySelector('.line-container');
+// var pathLength = line.getTotalLength();
+// var animationSpeed = 0.85; // Adjust the animation speed here
+
+// // Set initial SVG line properties for animation
+// line.style.strokeDasharray = pathLength;
+// line.style.strokeDashoffset = pathLength;
+
+// // Function to start the SVG animation
+// function startAnimation() {
+//   var containerRect = svgContainer.getBoundingClientRect();
+//   var sectionMiddle = containerRect.top + containerRect.height / 2;
+//   var scrollOffset = window.innerHeight - sectionMiddle;
+//   var scrollPercentage = scrollOffset / (window.innerHeight - containerRect.height / 2);
+
+//   // Calculate the new offset for the animation, starting from the middle of the section
+//   var newOffset = pathLength * (1 - Math.min(1, Math.max(0, scrollPercentage * animationSpeed)));
+//   line.style.strokeDashoffset = newOffset;
+// }
+
+// // Listen for the scroll event and trigger the animation based on the scroll position
+// window.addEventListener('scroll', startAnimation);
+
+
 // JavaScript
-var line = document.querySelector('#svg1');
-var svgContainer = document.querySelector('.line-container');
-var pathLength = line.getTotalLength();
-var animationSpeed = 0.85; // Adjust the animation speed here
+function startAnimation(svg, container, animationSpeed) {
+   var svgLength = svg.getTotalLength();
+ 
+   // Set initial SVG properties for animation
+   svg.style.strokeDasharray = svgLength;
+   svg.style.strokeDashoffset = svgLength;
+ 
+   // Function to animate the SVG
+   function animateSVG() {
+     var containerRect = container.getBoundingClientRect();
+     var sectionMiddle = containerRect.top + containerRect.height / 2;
+     var scrollOffset = window.innerHeight - sectionMiddle;
+     var scrollPercentage = scrollOffset / (window.innerHeight - containerRect.height / 2);
+ 
+     // Calculate the new offset for the animation, starting from the middle of the section
+     var newOffset = svgLength * (1 - Math.min(1, Math.max(0, scrollPercentage * animationSpeed)));
+     svg.style.strokeDashoffset = newOffset;
+   }
+ 
+   // Listen for the scroll event and trigger the animation based on the scroll position
+   window.addEventListener('scroll', animateSVG);
+ 
+   // Call the animateSVG function to trigger the initial animation
+   animateSVG();
+ }
+ 
+ // Get the first SVG and its container, then start the animation
+ var svg1 = document.querySelector('#svg1');
+ var svgContainer1 = document.querySelector('.line-container');
+ startAnimation(svg1, svgContainer1, 0.8);
+ 
+ // Get the second SVG and its container, then start the animation
+ var svg2 = document.querySelector('#svg2');
+ var svgContainer2 = document.querySelector('.svg2-container');
+ startAnimation(svg2, svgContainer2, 2); // You can adjust the animation speed for the second SVG
+ 
 
-// Set initial SVG line properties for animation
-line.style.strokeDasharray = pathLength;
-line.style.strokeDashoffset = pathLength;
-
-// Function to start the SVG animation
-function startAnimation() {
-  var containerRect = svgContainer.getBoundingClientRect();
-  var sectionMiddle = containerRect.top + containerRect.height / 2;
-  var scrollOffset = window.innerHeight - sectionMiddle;
-  var scrollPercentage = scrollOffset / (window.innerHeight - containerRect.height / 2);
-
-  // Calculate the new offset for the animation, starting from the middle of the section
-  var newOffset = pathLength * (1 - Math.min(1, Math.max(0, scrollPercentage * animationSpeed)));
-  line.style.strokeDashoffset = newOffset;
-}
-
-// Listen for the scroll event and trigger the animation based on the scroll position
-window.addEventListener('scroll', startAnimation);
 
 
 

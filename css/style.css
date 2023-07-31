@@ -1299,4 +1299,9 @@ body {
 .line-container svg {
     width: 50%;
 }
+
+.svg2-container {
+    display: flex;
+    justify-content: center;
+}
  
