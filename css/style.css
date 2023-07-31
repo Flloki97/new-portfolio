@@ -175,6 +175,10 @@ p strong {
     display: none;
 }
 
+.hc-left .job-tag {
+    text-align: center;
+}
+
 .cv-container::before {
     content: '';
     width: 100%;
@@ -1112,7 +1116,7 @@ body {
 
     .carousel ul {
         /* height: 620px; */
-        height: 740px;
+        height: 700px;
         min-height: 100%;
     }
 
@@ -1156,6 +1160,10 @@ body {
 
     .portfolio-project-container::after {
         padding: 15px;
+    }
+
+    .carousel-arrows-wrapper {
+        margin-top: 10px;
     }
 
 }
