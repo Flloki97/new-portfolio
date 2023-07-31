@@ -288,7 +288,7 @@ svg {
 }
 
 .portfolio-title {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     padding-top: 40px;
 }
 
@@ -1172,7 +1172,7 @@ body {
 
   .swiper-arrows {
     position: relative;
-    top: -150px;
+    top: -50px;
     width: 30%;
     margin: auto;
   }
@@ -1231,6 +1231,12 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .portfolio-content-wrapper .pc-right {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 600px) {
     .swiper {
         height: 90vh;
@@ -1242,6 +1248,10 @@ body {
 
     .swiper-arrows {
         top: -30px;
+    }
+
+    .portfolio-content-wrapper .pc-right {
+        margin-top: 10px;
     }
 }
 
@@ -1271,5 +1281,13 @@ body {
 .portfolio-content-wrapper .pc-right .h1-tag {
     text-align: start;
 }
+
+@media (max-height: 810px) {
+    .swiper {
+        height: 750px;
+    }
+}
+
+
 
  
