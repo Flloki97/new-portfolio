@@ -142,7 +142,7 @@ function loader(_success) {
                    return _success();
                }
            }
-       }, 30);
+       }, 25);
 }
 
 
