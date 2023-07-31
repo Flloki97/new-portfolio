@@ -932,7 +932,8 @@ body {
     }
 
     .line-container svg {
-        width: 45%;
+        /* width: 45%; */
+        width: 80%;
     }
 
     .divider {
@@ -963,7 +964,8 @@ body {
     }
 
     .skills-title {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        padding-top: 60px;
     }
 
     .skills-wrapper {
@@ -1137,5 +1139,133 @@ body {
 
 }
 
+
+
+
+  /* Swiper CSS */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    height: 900px;  
+  }
+
+  .swiper-arrows {
+    position: relative;
+    top: -150px;
+    width: 30%;
+    margin: auto;
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev,
+  #next,
+  #prev {
+    top: 90%;
+    bottom: 0 !important;
+    
+    
+}
+
+#next,
+#prev {
+    color: #0ce486;
+    /* font-size: 30px; */
+    font-weight: bold;
+    /* padding: 14px 20px; */
+    border: 1px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 3;
+    min-width: 70px;
+    min-height: 70px;
+    transition: all 0.3s;
+}
+
+#next:hover,
+#prev:hover {
+    transform: scale(1.2);
+    background-color: #0ce4867b;
+}
+
+@media (max-width: 768px) {
+    .swiper-arrows {
+        top: -70px;
+        width: 100%;
+    }
+
+    #next, 
+    #prev {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    #next::after, 
+    #prev::after {
+        font-size: 20px;
+    }
+
+    #next:hover, 
+    #prev:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper {
+        height: 100vh;
+    }
+
+    .portfolio-title {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-content-wrapper .pc-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#next::after {
+    padding-left: 5px;
+}
+
+#prev::after {
+    padding-right: 5px;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
+.portfolio-content-wrapper .pc-right p:first-child {
+    display: flex;
+    text-align: start;
+}
+
+.portfolio-content-wrapper .pc-right .h1-tag {
+    text-align: start;
+}
 
  
