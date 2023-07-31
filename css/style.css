@@ -266,8 +266,8 @@ p strong {
 }
 
 svg {
-    width: 50%;
-    margin: 20px 0 0 0;
+    /* width: 100%;
+    margin: 200px 0 0 0; */
 }
 
 .portfolio-title,
@@ -1172,7 +1172,7 @@ body {
 
   .swiper-arrows {
     position: relative;
-    top: -50px;
+    top: -150px;
     width: 30%;
     margin: auto;
   }
@@ -1235,6 +1235,10 @@ body {
     .portfolio-content-wrapper .pc-right {
         margin-top: 50px;
     }
+
+    .swiper-arrows {
+        top: -50px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1288,6 +1292,8 @@ body {
     }
 }
 
-
+.home-container {
+    margin-bottom: 300px;
+}
 
  

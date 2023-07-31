@@ -17,25 +17,56 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+// JavaScript
+var line = document.querySelector('#svg1');
+var svgContainer = document.querySelector('.line-container');
+var pathLength = line.getTotalLength();
+var animationSpeed = 0.85; // Adjust the animation speed here
 
-var svg1 = document.querySelector('#svg'+1);
-var tl = new TimelineMax();
+// Set initial SVG line properties for animation
+line.style.strokeDasharray = pathLength;
+line.style.strokeDashoffset = pathLength;
 
-//create a timeline with 2 tweens that draw 2 separate strokes
-tl.add(createLineTween(svg1),  "+=1");
+// Function to start the SVG animation
+function startAnimation() {
+  var containerRect = svgContainer.getBoundingClientRect();
+  var sectionMiddle = containerRect.top + containerRect.height / 2;
+  var scrollOffset = window.innerHeight - sectionMiddle;
+  var scrollPercentage = scrollOffset / (window.innerHeight - containerRect.height / 2);
 
-//this function creates a single tween that animates the stroke of an svg
-function createLineTween(svg) { 
-   var pathObject = {length:0, pathLength:svg.getTotalLength()}; 
-   var tween = TweenLite.to(pathObject, 2, {length:pathObject.pathLength, onUpdate:drawLine, onUpdateParams:[pathObject, svg], immediateRender:true});
-   return tween;
-};
+  // Calculate the new offset for the animation, starting from the middle of the section
+  var newOffset = pathLength * (1 - Math.min(1, Math.max(0, scrollPercentage * animationSpeed)));
+  line.style.strokeDashoffset = newOffset;
+}
+
+// Listen for the scroll event and trigger the animation based on the scroll position
+window.addEventListener('scroll', startAnimation);
+
+// Call the startAnimation function to trigger the initial animation
+startAnimation();
 
 
- //update stroke   
- function drawLine(obj, svg) {
-  svg.style.strokeDasharray = [obj.length, obj.pathLength].join(' ');
- };
+
+
+
+// var svg1 = document.querySelector('#svg'+1);
+// var tl = new TimelineMax();
+
+// //create a timeline with 2 tweens that draw 2 separate strokes
+// tl.add(createLineTween(svg1),  "+=2");
+
+// //this function creates a single tween that animates the stroke of an svg
+// function createLineTween(svg) { 
+//    var pathObject = {length:0, pathLength:svg.getTotalLength()}; 
+//    var tween = TweenLite.to(pathObject, 2, {length:pathObject.pathLength, onUpdate:drawLine, onUpdateParams:[pathObject, svg], immediateRender:true});
+//    return tween;
+// };
+
+
+//  //update stroke   
+//  function drawLine(obj, svg) {
+//   svg.style.strokeDasharray = [obj.length, obj.pathLength].join(' ');
+//  };
 
  //  -- Design link: https://dribbble.com/shots/16383090-Personal-Portfolio-Website-concept-design/attachments/9661424?mode=media
 
