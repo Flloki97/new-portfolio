@@ -1308,4 +1308,11 @@ body {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 550px) {
+    .contact-me-container .skills-title .h1-tag strong {
+        text-align: center;
+        font-size: 23px;
+    }
+}
  
