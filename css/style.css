@@ -16,6 +16,10 @@
     font-family: Keanu-R;
 }
 
+html {
+    scroll-padding: 3rem;
+}
+
 body {
     background-color: #111119;
     display: flex;
@@ -1315,4 +1319,9 @@ body {
         font-size: 23px;
     }
 }
- 
+
+@media (max-width: 600px) {
+    html {
+        scroll-padding: 35rem;
+    }
+}  
