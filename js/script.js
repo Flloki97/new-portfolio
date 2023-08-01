@@ -17,32 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// // JavaScript
-// var line = document.querySelector('#svg1');
-// var svgContainer = document.querySelector('.line-container');
-// var pathLength = line.getTotalLength();
-// var animationSpeed = 0.85; // Adjust the animation speed here
-
-// // Set initial SVG line properties for animation
-// line.style.strokeDasharray = pathLength;
-// line.style.strokeDashoffset = pathLength;
-
-// // Function to start the SVG animation
-// function startAnimation() {
-//   var containerRect = svgContainer.getBoundingClientRect();
-//   var sectionMiddle = containerRect.top + containerRect.height / 2;
-//   var scrollOffset = window.innerHeight - sectionMiddle;
-//   var scrollPercentage = scrollOffset / (window.innerHeight - containerRect.height / 2);
-
-//   // Calculate the new offset for the animation, starting from the middle of the section
-//   var newOffset = pathLength * (1 - Math.min(1, Math.max(0, scrollPercentage * animationSpeed)));
-//   line.style.strokeDashoffset = newOffset;
-// }
-
-// // Listen for the scroll event and trigger the animation based on the scroll position
-// window.addEventListener('scroll', startAnimation);
-
-
 // JavaScript
 function startAnimation(svg, container, animationSpeed) {
    var svgLength = svg.getTotalLength();
@@ -73,7 +47,7 @@ function startAnimation(svg, container, animationSpeed) {
  // Get the first SVG and its container, then start the animation
  var svg1 = document.querySelector('#svg1');
  var svgContainer1 = document.querySelector('.line-container');
- startAnimation(svg1, svgContainer1, 0.8);
+ startAnimation(svg1, svgContainer1, 0.9);
  
  // Get the second SVG and its container, then start the animation
  var svg2 = document.querySelector('#svg2');

@@ -1110,7 +1110,7 @@ body {
 
     .mobile-menu-container,
     .menu-links-container {
-        width: calc(100% - -39px);
+        width: calc(100% - -39.5px);
         padding: 0 20px;
         margin: 0 -20px;
     }
@@ -1190,9 +1190,7 @@ body {
 #next,
 #prev {
     color: #0ce486;
-    /* font-size: 30px; */
     font-weight: bold;
-    /* padding: 14px 20px; */
     border: 1px solid #fff;
     border-radius: 100%;
     text-align: center;
@@ -1206,6 +1204,10 @@ body {
 #prev:hover {
     transform: scale(1.2);
     background-color: #0ce4867b;
+}
+
+.line-container svg {
+    width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -1257,6 +1259,10 @@ body {
     .portfolio-content-wrapper .pc-right {
         margin-top: 10px;
     }
+
+    .line-container svg {
+        width: 100%;
+    }
 }
 
 .portfolio-content-wrapper .pc-right {
@@ -1296,9 +1302,7 @@ body {
     margin-bottom: 150px;
 }
 
-.line-container svg {
-    width: 50%;
-}
+
 
 .svg2-container {
     display: flex;
