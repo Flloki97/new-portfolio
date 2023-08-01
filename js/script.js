@@ -2,6 +2,10 @@ window.addEventListener("load", () => {
    loader();
 });
 
+$(window).on('beforeunload', function(){
+   $(window).scrollTop(0);
+ });
+
 
 
 // Smooth scrolling with Javascript because if i make it with css the smoth scroll from GSAP doesnt work well 
