@@ -968,8 +968,12 @@ body {
     }
 
     .skills-title {
-        margin-bottom: 60px;
-        padding-top: 60px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .experience-container {
+        padding-bottom: 30px;
     }
 
     .skills-wrapper {
