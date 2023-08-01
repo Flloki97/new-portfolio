@@ -180,7 +180,7 @@ p strong {
 }
 
 .hc-left .job-tag {
-    text-align: center;
+    text-align: start;
 }
 
 .cv-container::before {
@@ -1385,5 +1385,9 @@ body {
 @media (max-width: 600px) {
     .swiper {
         padding-top: 0px;
+    }
+
+    .hc-left .job-tag {
+        text-align: center;
     }
 }
