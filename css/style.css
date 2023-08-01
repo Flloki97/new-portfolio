@@ -1325,3 +1325,61 @@ body {
         scroll-padding: 35rem;
     }
 }  
+
+.portfolio-content-wrapper {
+    min-height: auto;
+}
+
+.swiper-arrows {
+    margin: auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.swiper-arrows {
+    position: relative;
+    top: -150px;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+#next, 
+#prev {
+    top: auto;
+    bottom: auto !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: relative !important;
+}
+
+.swiper-button-next {
+    order: 2;
+}
+
+.swiper {
+    height: 100% !important;
+    padding-top: 100px;
+}
+
+.swiper-arrows {
+    top: 0;
+}
+
+.swiper-wrapper {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .swiper {
+        padding-top: 0px;
+    }
+}
