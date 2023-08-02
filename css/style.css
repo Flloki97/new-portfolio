@@ -1391,3 +1391,7 @@ body {
         text-align: center;
     }
 }
+
+.portfolio-content-wrapper {
+    padding: 40px 0;
+}
