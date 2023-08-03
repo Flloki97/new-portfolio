@@ -87,6 +87,14 @@ buttons.forEach(button => {
 });
 
 
+const mySwiper = new Swiper('.mySwiper', {
+   autoplay: {
+    delay: 5000,
+  },
+
+});
+
+
 
 
 

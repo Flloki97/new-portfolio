@@ -1395,3 +1395,7 @@ body {
 .portfolio-content-wrapper {
     padding: 40px 0;
 }
+
+.swiper-slide {
+    margin-right: 0px !important;
+}
