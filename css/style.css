@@ -780,14 +780,22 @@ body {
     align-items: center;
     gap: 88px;
     height: 500px;
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
     left: 0;
+    right: 0;
     top: 100px;
     z-index: 100;
     background: #111119;
     width: calc(100% - -40px);
     padding: 0 20px;
     margin: 0 -20px;
+}
+
+.menu-links-container {
+    width: calc(100% - 10px) !important;
+    margin: 0 5px !important;
+    padding: 0 20px !important;
 }
 
 .menu-links-container a {
