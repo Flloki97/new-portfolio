@@ -794,7 +794,7 @@ body {
 }
 
 .menu-links-container {
-    width: calc(100% - 10px) !important;
+    width: calc(100% - 10.5px) !important;
     margin: 0 5px !important;
     padding: 0 20px !important;
 }
