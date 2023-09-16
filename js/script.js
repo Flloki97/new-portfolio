@@ -59,14 +59,6 @@ function startAnimation(svg, container, animationSpeed) {
  startAnimation(svg2, svgContainer2, 2); // You can adjust the animation speed for the second SVG
  
 
-
-
-
-
- //  -- Design link: https://dribbble.com/shots/16383090-Personal-Portfolio-Website-concept-design/attachments/9661424?mode=media
-
-
-
 //  Carousel JS
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
@@ -89,7 +81,7 @@ buttons.forEach(button => {
 
 const mySwiper = new Swiper('.mySwiper', {
    autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
 
 });
@@ -100,10 +92,10 @@ const mySwiper = new Swiper('.mySwiper', {
 
 // Smooth Scroll with GSAP
 
-const lenis = new Lenis({
-   duration: 1.2,
-   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-});
+// const lenis = new Lenis({
+//    duration: 1.2,
+//    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+// });
 
 function raf(time) {
    lenis.raf(time);
