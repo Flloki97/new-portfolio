@@ -1408,3 +1408,7 @@ body {
 .swiper-slide {
     margin-right: 0px !important;
 }
+
+#container {
+    overflow: hidden;
+}
