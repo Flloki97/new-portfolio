@@ -92,18 +92,33 @@ const mySwiper = new Swiper('.mySwiper', {
 
 // Smooth Scroll with GSAP
 
-// const lenis = new Lenis({
-//    duration: 1.2,
-//    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-// });
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
 
 function raf(time) {
-   lenis.raf(time);
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
+const lenis2 = new Lenis({
+   duration: 1.2,
+   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+});
+
+function raf(time) {
+   lenis2.raf(time);
    ScrollTrigger.update();
    requestAnimationFrame(raf);
 }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 const section_1 = document.getElementById("container");
 const col_left = document.querySelector(".col_left");
