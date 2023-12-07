@@ -529,26 +529,26 @@ body {
 
 .range {
     &:before {
-        animation: load .5s forwards linear, glitch 2s infinite linear;
+        animation: load .5s forwards linear;
     }
 }
 .range2 {
     &:before {
-        animation: load .5s forwards linear, glitch 2s infinite ;
+        animation: load .5s forwards linear, glitch 2.5s infinite ;
         animation-delay: 0ms, 1000ms;
     }
 }
 
 .range3 {
     &:before {
-        animation: load .5s forwards linear, glitch 2s infinite linear;
+        animation: load .5s forwards linear, glitch 2.5s infinite linear;
         animation-delay: 0ms, 2500ms;
     }
 }
 
 .range4 {
     &:before {
-        animation: load .5s forwards linear, glitch 2s infinite linear;
+        animation: load .5s forwards linear, glitch 2.5s infinite linear;
         animation-delay: 0ms, 800ms;
     }
 }
